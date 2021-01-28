@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+   /*
+    Douglas College
+    CSIS 3275 Software Engineering - Winter 2021 – Class Section 001
+    
+    
+    Website Title: Meet Kateryna
+    Authors: Kateryna Timonina 	
+    			
+    Date:   01/25/2021
+    File: wr_base_style.css
+    Description: 
+    	This CSS file defines the styles for page background, main header and footer.
+   */	
+
+/**** Reset Elements Styles *****************************/
+
+html, body, header, footer, aside, section, article, blockquote, figure, div, img, nav, ol, ul, p, a, h1, h2, h3, h4 {
+	display: block;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/**** Page Background *****************************/
+html {
+	background-color: rgb(255,230,145);
+	background-image: url('images/BigData.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+
+/**** Body Style *****************************/
+
+body {
+	width: 85%;
+	min-width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	background-color: rgb(100, 100, 0);
+}
+
+/**** Main Header *****************************/
+/* Header */
+body header {
+	background-color: rgba(60, 120, 0, 0.4);
+	background-image: url('images/Data-Analytics.png');	
+	
+}
+
+/*** Definitions for Date set up ***/
+
+body header > h4 {
+	font-family: Georgia, serif;
+	font-size: 1.1em;
+	color:#ffaa00;
+	font-style: normal;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 10px;
+	
+}
+
+/* Title */
+body header > h1 {
+	font-family: Georgia, serif;
+	font-size: 3.8em;
+	color:#ffaa00;
+	font-style: italic;
+	text-align: center;
+	/* text-shadow: rgb(234, 200, 11) 0px 0px 8px; */
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Horizontal Menu */
+nav#main_menu ul li {
+	float: left;
+	width: 14.28%;
+	background: linear-gradient(to bottom, rgb(28, 74, 34) 40%, rgb(80,40,0));
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+nav#main_menu ul li a {
+	color: rgb(220,220,220);
+	font-family: Verdana, Geneva, sans-serif;	
+	font-size: 0.8em;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	height: 50px;
+	border: 1px;
+	border-style: solid;
+	transition: color 2s ease,
+	            font-size 2s linear;
+}
+/* set up animation effect for main menu navigation list */
+
+@keyframes rainbow {
+	0% {color: rgb(220,220,220);}
+	10% {filter: contrast(1.7);}
+	25% {color: rgb(230,225,260);}
+	30% {filter: contrast(1.9);}
+	38% {color: rgb(300,220,100);}
+	45% {filter: contrast(2.3);}
+	55% {color: rgb(77, 59, 0);}
+	65% {color: rgb(370,255,145);}
+	70% {filter: contrast(2.9);}
+	75% {color: rgb(410,220,228);}
+	80% {filter: contrast(1.9);}
+	85% {color: rgb(300,220,100);}
+	90% {filter: contrast(2.3);}
+	100% {color: rgb(300,220,100);}
+	
+}
+nav#main_menu ul li a {
+	animation-name: rainbow;
+	animation-duration: 10s;
+	animation-timing-function: cubic-bezier(0, 2, -1, 2);
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+nav#main_menu ul li a:active,  {
+	background-color: rgb(140,140,140);
+}
+nav#main_menu ul li a:hover {
+	background-color: rgb(140,140,140);
+	color: orange;
+	font-size: 1em;
+}
+
+/**** Footer *****************************/
+body footer {
+	clear: left;
+	float: left;
+	width: 100%;
+	height: 50px;
+	
+	font-size: 0.7em;
+	color: rgb(220,220,220);
+	text-align: center;
+	vertical-align: middle;
+	background-color: rgb(80,40,0);
+	padding-top: 5px;
+	padding-bottom: 5px;	
+	line-height: 20px;
+}
+
+body footer a {
+	display: inline;
+	color: rgb(240,220,220);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+body footer a:active, body footer a:hover {
+	color: red;
+	text-decoration: underline;
+}

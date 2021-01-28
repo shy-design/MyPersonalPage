@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+   /*
+    Douglas College
+    CSIS 3275 Software Engineering - Winter 2021 – Class Section 001
+    
+    
+    Website Title: Meet Kateryna
+    Authors: Kateryna Timonina 	
+    			
+    Date:   01/25/2021
+    File:   wr_base_styles_2.css
+    Description: 
+    	This CSS file defines the styles for the Kateryna's page.
+   */	
+
+
+/**** Recipe Header *****************************/
+/* Division styles */
+
+div#body_row1_col1 {
+	width: 30%;
+	float: left;
+	
+	
+}
+div#body_row1_col2 {
+	width: 70%;
+	float: left;
+	padding: 20px;
+	
+}
+div.body_row2-3_col1 {
+	width: 70%;
+	float: left;
+	padding: 20px;
+}
+div.body_row2-3_col2 {
+	width: 30%;
+	float: left;
+	
+}
+div#body_row1, div.body_row2-3 {
+	clear: both;
+
+}
+div.body_row2-3::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+div#body_row1::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+/* Body styles */
+
+body {
+	background-color: white;
+}
+article.chef h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 1.3em;
+}
+article.chef {
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+article.chef p {
+	margin-bottom: 20px;
+}
+article.chef > p > a {
+	font-family: Verdana, Geneva, sans-serif;
+	color: rgb(220,220,220);
+	background-color: rgb(80,40,0);
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 0.6em;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	height: 30px;
+	border: 1px;
+	border-style: solid;
+	}
+	article.chef > p > a:hover, article.chef > p > a:active {
+	background-color: rgb(240,240,240);	
+	}
+	
+	p.nav_to_recipes {
+		display: inline;
+		font-style: italic;
+	}
+
+
+/* Images sizes */
+div#body_row1_col1 img, div.body_row2-3_col2 img {
+	width: 100%;
+	padding: 20px;
+}
+
+div.body_row2-3_col2  img {
+	border-radius: 15px;
+}
